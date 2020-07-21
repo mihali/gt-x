@@ -40,7 +40,7 @@ def distances ( file, d ):
 
     for x in list1[2:]:
       if float(x) > d:
-         list1[j] = '0.0'
+         list1[j] = '0.000000'
       j = j + 1
 
     if list1[0] in everything:
