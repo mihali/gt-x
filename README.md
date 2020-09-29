@@ -3,7 +3,7 @@ Gaussian logfile tools
 
 These are various short scripts to aid the analyses of Gaussian (gNN) output files. 
 
-- **gt-distdiffsMat.py** - Compute change in distances between atoms. Makes use of the differences matrices.
+- **gt-distdiffsMat.py** - Compute change in distances between atoms from two log files. Makes use of the differences matrices.
 
 - **gt-logn2com.pl** - Get the nth or last Standard Orientation from a log file and output a cartesian matrix for gNN input.
 
