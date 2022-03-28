@@ -4,8 +4,8 @@
 import sys, os
 
 nprocs = "32"              # number of processors
-mem = "96GB"               # memory threshold
-method = "#B3LYP/gen opt " # method
+mem = "48GB"               # memory threshold
+method = "#B97D3/6-311++G(d,p) opt " # method
 chargemult = "0 1"         # charge and multiplicity
 
 #==============
@@ -21,7 +21,8 @@ def fn ( inp, filename ):
  print("%s "%chargemult, file=fd)
 
  for line in inp[2:]:
-      print (line, file=fd) 
+      cline = line.strip()
+      print (cline, file=fd) 
  print ("\n\n", file=fd)
 #=============
 
@@ -39,3 +40,4 @@ elif argc >= 2:
      fn ( string, filename )
 else:
    print("Usage: %s [file]" % command )
+
